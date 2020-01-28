@@ -19,3 +19,22 @@ solution:
 select O.OrderDate, O.OrderID as 'Order', O.OrderDate as 'Date', C.CompanyName as 'Company', E.FirstName as 'Employee' FROM orders AS O, customers AS C, employees AS E where O.OrderDate between '1997/01/01' and '1997/12/31'
 
 insert into suppliers (CompanyName,ContactName,Country,City,phone,fax) values ('1Digital','John Mogi','Israel','Pardes-Hanna','050-9382456', '050-9382456')
+
+update suppliers CompanyName = 'Fedex', Phone = '03-1234567' where supplierId = '30' 
+X
+UPDATE suppliers SET city = 'Zim' WHERE supplierId = '30'
+
+delete from suppliers WHERE supplierId = '31'
+
+delete from suppliers where supplierId = '31'
+
+=-----------------
+
+-=----------------------------------------------------------------
+Therapist(th-id, name, email, tel, from-date, hourly-rate, diploma-by) Teatment(t-type, description) Therapist_speciality(id, t-type) Patients(P-id, p-name, adress, mobile) Hilling-program(P-id, start-date, th-id, t-name, hours)
+
+Select * from patients Where hilling-program is not null X
+
+איחוד טבלאות בין לקוחות לתוכנית ריפוי לפי הלקוח איי דיי ואז מוסיף תנאי אנד על כל סוגי הטיפולים
+
+Select Patients.p-name
